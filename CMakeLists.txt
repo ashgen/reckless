@@ -13,7 +13,7 @@ option(RECKLESS_BUILD_EXAMPLES "Build the examples" OFF)
 ################################################################################
 # Add Flags
 ################################################################################
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 if(MSVC)
     add_compile_options(/W4 /O3)
 else()
