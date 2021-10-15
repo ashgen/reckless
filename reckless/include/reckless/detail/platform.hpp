@@ -285,7 +285,6 @@ inline bool likely(bool expr) {
     return expr;
 #endif
 }
-
 inline bool unlikely(bool expr) {
 #ifdef __GNUC__
     return __builtin_expect(expr, false);
