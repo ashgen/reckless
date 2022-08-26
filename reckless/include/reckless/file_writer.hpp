@@ -28,7 +28,9 @@ namespace reckless {
 
 class file_writer : public detail::fd_writer {
 public:
+    file_writer(){}
     file_writer(char const* path);
+    void setPath(char const* path);
 #if defined(_WIN32)
     file_writer(wchar_t const* path);
 #endif

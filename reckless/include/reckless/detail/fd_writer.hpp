@@ -30,6 +30,7 @@ namespace detail {
 class fd_writer : public writer {
 public:
 #if defined(__unix__)
+    fd_writer():fd_(0){}
     fd_writer(int fd) : fd_(fd) {}
 #elif defined(_WIN32)
     fd_writer(void* handle) : handle_(handle) {}

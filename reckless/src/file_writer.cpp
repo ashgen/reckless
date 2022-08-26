@@ -69,6 +69,10 @@ reckless::file_writer::~file_writer()
         }
     }
 }
+void reckless::file_writer::setPath(const char *path) {
+  fd_= open_file(path);
+
+}
 
 #elif defined(_WIN32)
 namespace {
